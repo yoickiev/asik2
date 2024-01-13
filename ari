@@ -64,7 +64,7 @@ date_list=$(date +"%Y-%m-%d" -d "$data_server")
 data_ip="https://raw.githubusercontent.com/arivpnstores/akses/main/ip"
 function CEKIPX() {
 MYIP=$(curl -sS ipv4.icanhazip.com)
-IPVPS=$(curl -sS https://raw.githubusercontent.com/arivpnstores/akses/main/ip | grep $MYIP | awk '{print $4}')
+IPVPS=$(curl -sS https://raw.githubusercontent.com/yoivkiev/asik2/main/Ip | grep $MYIP | awk '{print $4}')
 if [[ $MYIP == $IPVPS ]]; then
 clear
 else
@@ -105,11 +105,11 @@ Key=$(curl -sS https://raw.githubusercontent.com/irawancandra6699/license/main/k
 KEY2=$(curl -sS https://raw.githubusercontent.com/irawancandra6699/license/main/key | grep $kode | awk '{print $4}')
 ADMIN=$(curl -sS https://raw.githubusercontent.com/irawancandra6699/license/main/key | grep $kode | awk '{print $5}')
 TOTALIP=$(curl -sS https://raw.githubusercontent.com/irawancandra6699/license/main/key | grep $kode | awk '{print $6}')
-web=$(curl -sS https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/izinx | grep $kode | awk '{print $3}')
-web2=$(curl -sS https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/izinx | grep $kode | awk '{print $2}')
-web3=$(curl -sS https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/izinx | grep $kode | awk '{print $4}')
-web4=$(curl -sS https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/izinx | grep $kode | awk '{print $5}')
-web5=$(curl -sS https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/izinx | grep $kode | awk '{print $6}')
+web=$(curl -sS https://raw.githubusercontent.com/yoickiev/asik2/main/izinx | grep $kode | awk '{print $3}')
+web2=$(curl -sS https://raw.githubusercontent.com/yoickiev/asik2/main/izinx | grep $kode | awk '{print $2}')
+web3=$(curl -sS https://raw.githubusercontent.com/yoickiev/asik2/main/izinx | grep $kode | awk '{print $4}')
+web4=$(curl -sS https://raw.githubusercontent.com/yoickiev/asik2/main/izinx | grep $kode | awk '{print $5}')
+web5=$(curl -sS https://raw.githubusercontent.com/yoickiev/asik2/main/izinx | grep $kode | awk '{print $6}')
 
 if [[ $kode == $web ]]; then
 MYIP=$(curl -sS ipv4.icanhazip.com)
@@ -125,7 +125,7 @@ USERGIT=$(cat /etc/github/username)
 hhari=$(date -d "$web3 days" +"%Y-%m-%d")
 mkdir /root/irawancandra6699
 cd /root/irawancandra6699
-wget https://raw.githubusercontent.com/arivpnstores/akses/main/ip >/dev/null 2>&1
+wget https://raw.githubusercontent.com/yoickiev/asik2/main/ip >/dev/null 2>&1
 if [ "$web4" = "ON" ]; then
 sed -i "/# RESELLER/a ### ${author} ${hhari} ${MYIP} ${web4} ${web5}" /root/irawancandra6699/ip
 else
@@ -160,7 +160,7 @@ USERGIT=$(cat /etc/github/username)
 hhari=$(date -d "$KEY2 days" +"%Y-%m-%d")
 mkdir /root/irawancandra6699
 cd /root/irawancandra6699
-wget https://raw.githubusercontent.com/arivpnstores/akses/main/ip >/dev/null 2>&1
+wget https://raw.githubusercontent.com/yoickiev/asik2/main/ip >/dev/null 2>&1
 if [ "$ADMIN" = "ON" ]; then
 sed -i "/# RESELLER/a ### ${author} ${hhari} ${MYIP} ${ADMIN} ${TOTALIP}" /root/irawancandra6699/ip
 else
@@ -259,9 +259,9 @@ clear
 #########################
 # USERNAME
 rm -f /usr/bin/user
-username=$(curl https://raw.githubusercontent.com/arivpnstores/akses/main/ip | grep $MYIP | awk '{print $2}')
+username=$(curl https://raw.githubusercontent.com/yoickiev/asik2/main/ip | grep $MYIP | awk '{print $2}')
 echo "$username" >/usr/bin/user
-expx=$(curl https://raw.githubusercontent.com/arivpnstores/akses/main/ip | grep $MYIP | awk '{print $3}')
+expx=$(curl https://raw.githubusercontent.com/yoickiev/asik2/main/ip | grep $MYIP | awk '{print $3}')
 echo "$expx" >/usr/bin/e
 # DETAIL ORDER
 username=$(cat /usr/bin/user)
@@ -285,7 +285,7 @@ mai="datediff "$Exp" "$DATE""
 Info="(${green}Active${NC})"
 Error="(${RED}ExpiRED${NC})"
 today=`date -d "0 days" +"%Y-%m-%d"`
-Exp1=$(curl https://raw.githubusercontent.com/arivpnstores/akses/main/ip | grep $MYIP | awk '{print $4}')
+Exp1=$(curl https://raw.githubusercontent.com/yoickiev/asik2/main/ip | grep $MYIP | awk '{print $4}')
 if [[ $today < $Exp1 ]]; then
 sts="${Info}"
 else
@@ -294,7 +294,7 @@ fi
 echo -e "\e[32mloading...\e[0m"
 clear
 # REPO    
-    REPO="https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/"
+    REPO="https://raw.githubusercontent.com/yoickiev/asik2/main/"
 
 ####
 start=$(date +%s)
@@ -474,7 +474,7 @@ resbot() {
 apt update && apt upgrade
 apt install python3 python3-pip git
 cd /usr/bin
-wget https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/bot/adminbot.zip
+wget https://raw.githubusercontent.com/yoickiev/asik2/main/bot/adminbot.zip
 unzip adminbot.zip
 chmod +x /usr/bin/*
 clear
@@ -482,16 +482,16 @@ pip3 install -r adminbot/requirements.txt
 }
 #DOMAIN
 res16() {
-wget https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/ssh/cf2.sh && chmod +x cf2.sh
+wget https://raw.githubusercontent.com/yoickiev/asik2/main/ssh/cf2.sh && chmod +x cf2.sh
 clear
 }
 res1() {
-wget https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/ssh/cf.sh && chmod +x cf.sh
+wget https://raw.githubusercontent.com//main/ssh/cf.sh && chmod +x cf.sh
 clear
 }
 #MENU
 res2() {
-wget https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/menu/menu2.zip
+wget https://raw.githubusercontent.com/yoickiev/asik2/main/menu/menu2.zip
     unzip menu2.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
@@ -500,7 +500,7 @@ wget https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/menu/menu2
 }
 #MODULE XRAY
 res3() {
-REPO="https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/"
+REPO="https://raw.githubusercontent.com/yoickiev/asik2/main/"
 wget -O /etc/xray/config.json "${REPO}xray/config.json" >/dev/null 2>&1
 #wget -O /usr/local/bin/xray "${REPO}xray/xray.linux.64bit" >/dev/null 2>&1
 wget -O /etc/systemd/system/runn.service "${REPO}xray/runn.service" >/dev/null 2>&1
@@ -588,10 +588,10 @@ wget ${REPO}bbr.sh &&  chmod +x bbr.sh && ./bbr.sh
 }
 #WSEPRO
 res14() {
-wget -O /usr/bin/ws "https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/ws/ws" >/dev/null 2>&1
-    wget -O /usr/bin/sysctl.conf "https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/ws/sysctl.conf" >/dev/null 2>&1
-    wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/ws/tun.conf" >/dev/null 2>&1
-    wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/ws/ws.service" >/dev/null 2>&1
+wget -O /usr/bin/ws "https://raw.githubusercontent.com/yoickiev/asik2/main/ws/ws" >/dev/null 2>&1
+    wget -O /usr/bin/sysctl.conf "https://raw.githubusercontent.com/yoickiev/asik2/main/ws/sysctl.conf" >/dev/null 2>&1
+    wget -O /usr/bin/tun.conf "https://raw.githubusercontent.com/yoickiev/asik2/main/ws/tun.conf" >/dev/null 2>&1
+    wget -O /etc/systemd/system/ws.service "https://raw.githubusercontent.com/yoickiev/asik2/main/ws/ws.service" >/dev/null 2>&1
     
     chmod +x /etc/systemd/system/ws.service
     chmod +x /usr/bin/ws
@@ -604,14 +604,14 @@ systemctl start ws
 systemctl restart ws
 }
 res15() {
-wget https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/ssh/udp
+wget https://raw.githubusercontent.com/yoickiev/asik2/main/ssh/udp
 chmod +x udp
 ./udp
 }
 # Fungsi input domain
 #
 base_package
-REPO="https://raw.githubusercontent.com/arivpnstores/SC-MYRID-MOD/main/"
+REPO="https://raw.githubusercontent.com/yoickiev/asik2/main/"
 echo -e ""
 res17() {
 clear
